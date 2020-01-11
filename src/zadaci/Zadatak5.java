@@ -21,14 +21,16 @@ public class Zadatak5 {
 			if (unos.charAt(i) != ' ') {
 				sumaString = sumaString + unos.charAt(i);
 
-			} else if (unos.charAt(i) == ' ' || unos.charAt(i) == '.') {
+			}
+			if (unos.charAt(i) == ' ' || unos.charAt(i) == '.') {
 				arrayList.add(sumaString);
 				sumaString = " ";
 			}
 		}
-		
-		  for (String e : arrayList) { System.out.print(e + " "); }
-		 
+
+		for (String e : arrayList) {
+			System.out.print(e + " ");
+		}
 
 		for (int i = 0; i < arrayList.size(); i++) {
 			String rijecString = arrayList.get(i);
